@@ -6,13 +6,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
-#myImg {
+.popupImg {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-#myImg:hover {opacity: 0.7;}
+.popupImg:hover {opacity: 0.7;}
 
 /* The Modal (background) */
 .modal {
@@ -121,25 +121,25 @@
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         <div class="w3-display-topleft w3-black w3-padding"></div>
-        <img id="myImg" src="/darkTriangle.png" alt="triangles" style="width:100%">
+        <img class="popupImg" src="/darkTriangle.png" alt="triangles" style="width:100%">
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         <div class="w3-display-topleft w3-black w3-padding"></div>
-        <img id="myImg" src="/colorGradient.png" alt="colors" style="width:100%">
+        <img class="popupImg" src="/colorGradient.png" alt="colors" style="width:100%">
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         <div class="w3-display-topleft w3-black w3-padding"></div>
-        <img id="myImg" src="/bubble.png" alt="bubbles" style="width:100%">
+        <img class="popupImg" src="/bubble.png" alt="bubbles" style="width:100%">
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         <div class="w3-display-topleft w3-black w3-padding"></div>
-        <img id="myImg" src="/triangleGradient.png" alt="triangles" style="width:100%">
+        <img class="popupImg" src="/triangleGradient.png" alt="triangles" style="width:100%">
       </div>
     </div>
   </div>
@@ -148,25 +148,25 @@
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         <div class="w3-display-topleft w3-black w3-padding"></div>
-        <img id="myImg" src="/hexagon.png" alt="hexagons" style="width:99%">
+        <img class="popupImg" src="/hexagon.png" alt="hexagons" style="width:99%">
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         <div class="w3-display-topleft w3-black w3-padding"></div>
-        <img id="myImg" src="/wave.png" alt="wave" style="width:99%">
+        <img class="popupImg" src="/wave.png" alt="wave" style="width:99%">
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         <div class="w3-display-topleft w3-black w3-padding"></div>
-        <img id="myImg" src="/hearts.png" alt="hearts" style="width:99%">
+        <img class="popupImg" src="/hearts.png" alt="hearts" style="width:99%">
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         <div class="w3-display-topleft w3-black w3-padding"></div>
-        <img id="myImg" src="/w3images/house3.jpg" alt="" style="width:99%">
+        <img class="popupImg" src="/w3images/house3.jpg" alt="" style="width:99%">
       </div>
     </div>
   </div>
@@ -253,15 +253,17 @@
 <script>
 // Get the modal
 var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
 var modalImg = document.getElementById("img01");
+var images = document.getElementsByClassName("popupImg");
 var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
+
+for (i = 0; i < images.length; i++) {
+  var _img = images[i];
+  _img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
 }
 
 // Get the <span> element that closes the modal
