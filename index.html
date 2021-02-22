@@ -31,16 +31,29 @@
 
 .parallax {
   /* The image used */
-  background-image: src="/darkTriangle.png";
+  background-image: url("./darkTriangle.png");
 
   /* Set a specific height */
-  min-height: 800px; 
+  min-height: 95vh; 
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.parallax>h1>span>b{
+  font-size: 3em;
+}
+.parallax>h1>span{
+  background-color: black;
+  opacity: 0.7;
+  height: 3em;
+  padding: auto;
 }
 
 /* Modal Content (Image) */
@@ -106,15 +119,9 @@
   </div>
 </div>
 
-<div class="parallax"></div>
-
-<!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <img class="w3-image" src="/darkTriangle.png" alt="picture" width="1500" height="800" >
-  <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Vectorartist</b></span></h1>
-  </div>
-</header>
+<div class="parallax">
+  <h1 class="w3-xxlarge w3-text-white"><span><b>Vectorartist</b></span></h1>
+</div>
 
 <!-- Page content -->
 <div class="w3-content w3-padding" style="max-width:1564px">
@@ -128,25 +135,25 @@
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         
-        <img class="popupImg" src="/darkTriangle.png" alt="triangles" style="width:100%">
+        <img class="popupImg" src="./darkTriangle.png" alt="triangles" style="width:100%">
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         
-        <img class="popupImg" src="/colorGradient.png" alt="colors" style="width:100%">
+        <img class="popupImg" src="./colorGradient.png" alt="colors" style="width:100%">
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         
-        <img class="popupImg" src="/bubble.png" alt="bubbles" style="width:100%">
+        <img class="popupImg" src="./bubble.png" alt="bubbles" style="width:100%">
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         
-        <img class="popupImg" src="/triangleGradient.png" alt="triangles" style="width:99%">
+        <img class="popupImg" src="./triangleGradient.png" alt="triangles" style="width:99%">
       </div>
     </div>
   </div>
@@ -157,25 +164,25 @@
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         
-        <img class="popupImg" src="/hexagon.png" alt="hexagons" style="width:99%">
+        <img class="popupImg" src="./hexagon.png" alt="hexagons" style="width:99%">
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         
-        <img class="popupImg" src="/wave.png" alt="wave" style="width:99%">
+        <img class="popupImg" src="./wave.png" alt="wave" style="width:99%">
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         
-        <img class="popupImg" src="/hearts.png" alt="hearts" style="width:99%">
+        <img class="popupImg" src="./hearts.png" alt="hearts" style="width:99%">
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         
-        <img class="popupImg" src="/futuristicHexagon.png" alt="hexagons" style="width:99%">
+        <img class="popupImg" src="./futuristicHexagon.png" alt="hexagons" style="width:99%">
       </div>
     </div>
   </div>
@@ -186,25 +193,25 @@
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         
-        <img class="popupImg" src="/bubbles.png" alt="bubbles" style="width:99%">
+        <img class="popupImg" src="./bubbles.png" alt="bubbles" style="width:99%">
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         
-        <img class="popupImg" src="/circleGradient.png" alt="circles" style="width:99%">
+        <img class="popupImg" src="./circleGradient.png" alt="circles" style="width:99%">
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         
-        <img class="popupImg" src="/.png" alt="" style="width:99%">
+        <img class="popupImg" src="./.png" alt="" style="width:99%">
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         
-        <img class="popupImg" src="/.png" alt="" style="width:99%">
+        <img class="popupImg" src="./.png" alt="" style="width:99%">
       </div>
     </div>
   </div>
